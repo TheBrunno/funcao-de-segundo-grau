@@ -1,5 +1,5 @@
 from math import sqrt
-
+import graph
 
 a = str(input("Insira o valor de a: "))
 b = str(input("Insira o valor de b: "))
@@ -38,6 +38,7 @@ class CalcRaiz:
                 i+=1
                 if self.delta < 0:
                     break
+            graph.graphCreate(self.a, self.b, self.c)
 
     def calcBhaskara(self):
         print("-"*20)
